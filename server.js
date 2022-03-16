@@ -1,6 +1,6 @@
-import express from "express";
-import socket from "socket.io";
-import dotenv from "dotenv";
+const express = require("express");
+const socket = require("socket.io");
+const dotenv = require("dotenv");
 dotenv.config();
 //setting up App
 const app = express();
