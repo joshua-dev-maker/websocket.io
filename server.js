@@ -1,9 +1,12 @@
 import express from 'express';
 import socket from 'socket.io';
+import dotenv from 'dotenv'
+dotenv.config()
 //setting up App
 const app = express();
-const server = app.listen(4070,()=>{
-console.log('server listening to requests on port 4070')
+const port = process.env.PORT || 4070;
+const server = app.listen(port,()=>{
+console.log(`server listening to requests on port ${port}`)
 });
 
 //static files
