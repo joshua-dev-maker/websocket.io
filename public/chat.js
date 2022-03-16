@@ -1,5 +1,7 @@
 //make connection
-const socket = io.connect("http://localhost:4070");
+const socket = io.connect(
+  "https://chatappon.herokuapp.com/"
+);
 
 //Query DOM
 const message = document.getElementById("message");
